@@ -1,0 +1,4 @@
+<div *ngFor='let top of TopCrimes'>
+  <a [routerLink]='top.Category'>{{top.Category}}</a>
+  ,{{top.arrest_count}}
+</div>
