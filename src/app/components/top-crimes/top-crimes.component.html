@@ -1,4 +1,5 @@
-<div *ngFor='let top of TopCrimes'>
+<app-filter-options *ngIf='TopCrimes' [list]='TopCrimes'></app-filter-options>
+<div class="listItem" *ngFor='let top of TopCrimes'>
   <a [routerLink]='top.Category'>{{top.Category}}</a>
-  ,{{top.arrest_count}}
+  <div class="count">{{top.arrest_count}}</div>
 </div>

@@ -1,3 +1,5 @@
-<div *ngFor='let top of TopCrimes'>
-    {{top.Name}},{{top.arrest_count}}
+<app-filter-options *ngIf='TopPlayers' [list]='TopPlayers'></app-filter-options>
+<div class="listItem" *ngFor='let top of TopPlayers'>
+    <div class="name">{{top.Name}}</div>
+    <div class="count">{{top.arrest_count}}</div>
   </div>

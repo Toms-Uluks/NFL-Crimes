@@ -8,13 +8,15 @@ import { TopPlayersForCrimeComponent } from './components/top-players-for-crime/
 import { TopTeamsForCrimeComponent } from './components/top-teams-for-crime/top-teams-for-crime.component';
 import { NFLServiceService } from './services/nfl-service.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FilterOptionsComponent } from './components/filter-options/filter-options.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopCrimesComponent,
     TopPlayersForCrimeComponent,
-    TopTeamsForCrimeComponent
+    TopTeamsForCrimeComponent,
+    FilterOptionsComponent
   ],
   imports: [
     HttpClientModule,

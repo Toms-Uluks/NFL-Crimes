@@ -15,7 +15,7 @@ export class TopCrimesComponent implements OnInit {
   ngOnInit() {
     this.api.GetTopCrimes().subscribe(
       data => { 
-        this.TopCrimes = data
+        this.TopCrimes = data;
       })
   }
 

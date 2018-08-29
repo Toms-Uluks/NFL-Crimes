@@ -8,16 +8,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./top-teams-for-crime.component.css']
 })
 export class TopTeamsForCrimeComponent implements OnInit {
-  TopCrimes: Object;
+  TopTeams: Object;
   constructor(
     private router: Router,
     private api: NFLServiceService
   ) { }
 
   ngOnInit() {
-    this.api.GetTopTeamsForCrime(this.router.url.substring(14)).subscribe(
+    this.api.GetTopTeamsForCrime(this.router.url.replace('/top-team-for/', '')).subscribe(
       data => { 
-        this.TopCrimes = data
+        this.TopTeams = data;
       })
   }
 }

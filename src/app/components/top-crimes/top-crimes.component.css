@@ -1,0 +1,10 @@
+.listItem {
+    width: 20%;
+    margin-left: 20px
+}
+.count {
+    text-align: end
+}
+a {
+    position: absolute
+}
