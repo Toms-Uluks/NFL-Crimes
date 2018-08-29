@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { TopCrimesComponent } from './components/top-crimes/top-crimes.component';
 import { TopPlayersForCrimeComponent } from './components/top-players-for-crime/top-players-for-crime.component';
 import { TopTeamsForCrimeComponent } from './components/top-teams-for-crime/top-teams-for-crime.component';
+import { CrimeTimeLineComponent } from './components/crime-time-line/crime-time-line.component';
 
 const nflRoutes: Routes = [
   {
@@ -26,7 +27,17 @@ const nflRoutes: Routes = [
     path: 'top-team-for/:id',
     component: TopTeamsForCrimeComponent,
     pathMatch: 'full'
-  }, 
+  },
+  {
+    path: 'crime-timeline',
+    component: TopCrimesComponent,
+  },  
+  {
+    path: 'crime-timeline/:id',
+    component: CrimeTimeLineComponent,
+    pathMatch: 'full'
+  },
+  
 ]
 
 @NgModule({

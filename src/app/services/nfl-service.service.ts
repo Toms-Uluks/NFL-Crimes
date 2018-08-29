@@ -14,9 +14,7 @@ export class NFLServiceService {
 
 
   GetTopCrimes() {
-    const url = 'crime';
-  
-    return this.http.get(environment.api + url);
+    return this.http.get(environment.api + 'crime');
   }
 
   GetTopPlayersForCrime(crimeID) {
@@ -29,5 +27,11 @@ export class NFLServiceService {
     const url = 'crime/topTeams/' + crimeID;
     
     return this.http.get(environment.api + url);
+  }
+
+  GetCrimeTimeLine(crimeID) {
+    const url = 'crime/timeline/' + crimeID;
+
+    return this.http.get(environment.api + url)
   }
 }
