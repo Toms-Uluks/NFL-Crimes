@@ -8,17 +8,17 @@ import { Observable } from 'rxjs';
 })
 export class FilterOptionsComponent implements OnInit {
   @Input() list: any;
-  AlphabetOrder= 'Largest -> smallest'
+  AlphabetOrder= 'LARGEST -> smallest'
   constructor() { }
 
   ngOnInit() {
     console.log(this.list)
   }
   switchAlphabeticalButton() {
-    if (this.AlphabetOrder === 'Largest -> smallest') {
-      this.AlphabetOrder = 'smallest -> Largest'
+    if (this.AlphabetOrder === 'LARGEST -> smallest') {
+      this.AlphabetOrder = 'smallest -> LARGEST'
     } else {
-      this.AlphabetOrder = 'Largest -> smallest'
+      this.AlphabetOrder = 'LARGEST -> smallest'
     }
     this.list.reverse()
     console.log(this.list)
